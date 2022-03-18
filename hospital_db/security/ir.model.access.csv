@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_first_hospital,access.first.hospital,model_first_hospital,,1,1,1,1

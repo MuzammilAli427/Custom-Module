@@ -1,7 +1,7 @@
-from server.odoo import models,osv,fields
+from odoo import models,osv,fields
 class your_class(models.Model):
     _name = 'first.hospital'
-    _description = 'Hospital discription'
+    _description = 'Hospital description'
 
     name = fields.Char(string="patient_name")
     age = fields.Integer(string="patient_age")
