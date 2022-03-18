@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+    <record id="Nursery_tree" model="ir.ui.view">
+        <field name="name">Nursery.view.tree</field>
+        <field name="model">plant.nursery</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+
+            <tree string="Plants List">
+                <field name="name"/>
+                <field name="price"/>
+<!--                <field name="height"/>-->
+<!--                <field name="notes"/>-->
+<!--                <field name="image"/>-->
+            </tree>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+        <record id="action_nursery_plant" model="ir.actions.act_window">
+        <field name="name">Plants</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">plant.nursery</field>
+        <field name="view_mode">tree,form</field>
+
+<!--        <field name="help" type="html">-->
+<!--            <p class="o_view_nocontent_smiling_face">Create first patient</p>-->
+<!--        </field>-->
+
+    </record>
+
+
+    <menuitem
+            id="Plants_root_menu"
+            name="Plants Nursery" />
+<!--            sequence="0" -->
+<!--            web_icon="om_mall,static/p_icon.png"/>-->
+
+    <menuitem id="Nursery_child_menu"
+              name="Plants"
+              parent="Plants_root_menu"
+              action="action_nursery_plant"
+              sequence="1"/>
+ </odoo>

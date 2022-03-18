@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+   <record id="Nursery_form" model="ir.ui.view">
+        <field name="name">Nursery.view.form</field>
+        <field name="model">nursery.plant</field>
+        <field name="arch" type="xml">
+            <form string="Plants">
+
+                <sheet>
+                    <h1>
+                        <field name="name" placeholder="Plants Name" />
+                    </h1>
+                    <notebook>
+                        <page string="Shop">
+
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="price"/>
+                        </group>
+<!--                        <group>-->
+<!--                            <field name="height"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                    <group>-->
+<!--                        <field name="notes"/>-->
+<!--                        <field name="image"/>-->
+
+                    </group>
+                    </page>
+                    </notebook>
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+</odoo>

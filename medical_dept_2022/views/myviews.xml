@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+    <record id="Patient" model="ir.ui.view">
+        <field name="first_name">ft.name.patient</field>
+        <field name="last_name">lt,name.patient</field>
+        <field name="p_id">id.patient</field>
+        <field name="payment">payment.patient</field>
+        <field name="arch" type="xml">
+            <tree string="Patient Data">
+                <field name="first_name"/>
+                <field name="last_name"/>
+                <field name="p_id"/>
+                <field name="payment"/>
+            </tree>
+        </field>
+    </record>
+
+        <record id="action_patient" model="ir.actions.act_window">
+        <field name="first_name">Patient</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">first.hospital</field>
+        <!--        <field name = "view_type">form</field>-->
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create first patient</p>
+        </field>
+
+    </record>
+
+    <menuitem id="hospital_root" name="Hospital" sequence="0" web_icon="om_mall,static/p_icon.png"/>
+    <menuitem id="hospital_patient" name="Patient" parent="hospital_root" action="action_patient"/>
+</odoo>
